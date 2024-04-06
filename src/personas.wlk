@@ -1,23 +1,23 @@
 object rosa{
-	method leGusta_(unaCosa){
-		return unaCosa.peso() <= 2000
+	method leGusta_(unObjeto){
+		return unObjeto.peso() <= 2000
 	}
 }
 
 object estefania{
-	method leGusta_(unaCosa){
-		return unaCosa.color().esFuerte()
+	method leGusta_(unObjeto){
+		return unObjeto.color().esFuerte()
 	}
 }
 
 object luisa{
-	method leGusta_(unaCosa){
-		return unaCosa.material().brilla()
+	method leGusta_(unObjeto){
+		return unObjeto.material().brilla()
 	}
 }
 
 object juan{
-	method leGusta_(unaCosa){
-		return (not unaCosa.color().esFuerte()) or ( unaCosa.peso() > 1200 and unaCosa.peso() < 1800 )
+	method leGusta_(unObjeto){
+		return (not unObjeto.color().esFuerte()) or ( unObjeto.peso() > 1200 and unObjeto.peso() < 1800 )
 	}
 }

@@ -1,3 +1,5 @@
+//Objetos
+
 object remera{
 	method color(){return rojo}
 	method material(){return lino}
@@ -30,8 +32,8 @@ object placa{
 	method material(){return cobre}
 	method peso(){return peso}
 	method peso(pesoNuevo){peso = pesoNuevo}
-	method color(){return peso}
-	method color(colorNuevo){peso = colorNuevo}
+	method color(){return color}
+	method color(colorNuevo){color = colorNuevo}
 }
 
 //Colores
@@ -49,6 +51,12 @@ object pardo{
 	method esFuerte(){return false}
 }
 
+//Mas Colores
+object naranja{
+	method esFuerte(){return true}
+}
+
+
 //Materiales
 
 object cobre{
@@ -65,4 +73,25 @@ object madera{
 }
 object cuero{
 	method brilla(){return false}
+}
+
+//Mas Objetos
+object arito{
+	method color(){return celeste}
+	method material(){return cobre}
+	method peso(){return 180}
+}
+object banquito{
+	var color = naranja
+	method color(){return color}
+	method color(colorNuevo){color = colorNuevo}
+	method material(){return madera}
+	method peso(){return 1700}
+}
+object cajita{
+	var objetoDentro
+	method color(){return rojo}
+	method material(){return cobre}
+	method peso(){return 400 + objetoDentro.peso()}
+	method objetoDentro(unObjeto){objetoDentro = unObjeto}
 }
